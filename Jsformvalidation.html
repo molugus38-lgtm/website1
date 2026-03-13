@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h2>Register</h2>
+        <input type="text" id="email" placeholder="Enter Gmail"><br><br>
+        <input type="password" id="password" placeholder="Enter Password"><br><br>
+        <button onclick="validateForm()">Submit</button>
+        <p id="result"></p>
+        function validateForm() {
+            let email=document.getElementById("email").value;
+            let password=document.getElementById("password").value;
+            let emailPattern=/^[^\s@]+@gmail\.com$/;
+            let passwordPattern=/^(?=.*[A-Za])(?=.*\d)(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            if(!emailPattern.test(email)){
+                document.getElementById("result").innerText="Invalid Gmail address.";
+                return;
+            }
+            if(!passwordPattern.test(password)){
+                document.getElementById("result").innerText="Password must be at least 8 characters long and include uppercase, lowercase, number, and special character.";
+                return;
+            }

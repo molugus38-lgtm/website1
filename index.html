@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CineVerse Movie Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <header class="main-header">
+    <nav class="navbar">
+        <button onclick="filterMovies('all')">ALL</button>
+        <button onclick="filterMovies('action')">ACTION</button>
+        <button onclick="filterMovies('comedy')">COMEDY</button>
+        <button onclick="filterMovies('romance')">ROMANCE</button>
+        <button onclick="filterMovies('scifi')">SCI-FI</button>
+        <button onclick="filterMovies('drama')">DRAMA</button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+        <h1 class="hero-logo">📽️ CineVerse</h1>
+        <p class="hero-tagline">Experience Movies Like Never Before</p>
+    </div>
+
+</section>
+
+<!-- MOVIES -->
+<section id="movies">
+<h2>🎬 Now Showing</h2>
+
+<div class="movie-container">
+
+<!-- RRR -->
+<div class="movie-card" data-genre="action">
+<button class="wishlist-btn">❤</button>
+<img src="rrr.jpg">
+<h3>RRR</h3>
+<div class="rating" data-rating="4.8"></div>
+<p class="description">
+Two revolutionaries fight British rule.<br>
+Epic friendship and patriotism.<br>
+Massive action spectacle.<br>
+Visually grand cinema.
+</p>
+<p class="price">Rent: ₹299</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Baahubali -->
+<div class="movie-card" data-genre="action">
+<button class="wishlist-btn">❤</button>
+<img src="bahubali.jpg">
+<h3>Baahubali 2</h3>
+<div class="rating" data-rating="4.7"></div>
+<p class="description">
+An epic tale of power, betrayal, and destiny.<br>
+A young man discovers his royal heritage in Mahishmati.<br>
+He rises against tyranny to fulfill his father’s legacy.<br>
+</p>
+<p class="price">Rent: ₹259</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Pushpa -->
+<div class="movie-card" data-genre="action">
+<button class="wishlist-btn">❤</button>
+<img src="pushpa.jpg">
+<h3>Pushpa 1</h3>
+<div class="rating" data-rating="4.5"></div>
+<p class="description">
+Rise of a smuggler.<br>
+Power and pride collide.<br>
+Stylish action drama.<br>
+Iconic dialogues.
+</p>
+<p class="price">Rent: ₹199</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Jersey -->
+<div class="movie-card" data-genre="drama">
+<button class="wishlist-btn">❤</button>
+<img src="jersey.jpg">
+<h3>Jersey</h3>
+<div class="rating" data-rating="4.6"></div>
+<p class="description">
+A failed cricketer returns.<br>
+Dreams never fade.<br>
+Emotional father bond.<br>
+Inspiring sports drama.
+</p>
+<p class="price">Rent: ₹289</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Rangasthalam -->
+<div class="movie-card" data-genre="drama">
+<button class="wishlist-btn">❤</button>
+<img src="Rangasthalam.jpg">
+<h3>Rangasthalam</h3>
+<div class="rating" data-rating="4.7"></div>
+<p class="description">Village politics.<br>Brotherhood.<br>Emotional drama.<br>Powerful storytelling.</p>
+<p class="price">Rent: ₹299</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- The Pursuit of Happyness -->
+<div class="movie-card" data-genre="drama">
+<button class="wishlist-btn">❤</button>
+<img src="pursuitofhappyness.jpg">
+<h3>The Pursuit of Happyness</h3>
+<div class="rating" data-rating="4.8"></div>
+<p class="description">Struggle & hope.<br>Father-son bond.<br>Inspirational.<br>True story.</p>
+<p class="price">Rent: ₹350</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Shawshank Redemption -->
+<div class="movie-card" data-genre="drama">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/I/81nC0eFQ0TL._AC_SL1500_.jpg">
+<h3>The Shawshank Redemption</h3>
+<div class="rating" data-rating="4.9"></div>
+<p class="description">Prison escape.<br>Hope survives.<br>Friendship.<br>Legendary drama.</p>
+<p class="price">Rent: ₹399</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Dear Comrade -->
+<div class="movie-card" data-genre="drama">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/M/MV5BY2I4ZGY4YTAtYzQ4NS00MzI2LWJmYjAtOTM3ODliYzY5MTg0XkEyXkFqcGdeQXVyMTEzOTI5NTk@._V1_.jpg">
+<h3>Dear Comrade</h3>
+<div class="rating" data-rating="4.3"></div>
+<p class="description">Anger & love.<br>Student politics.<br>Emotional depth.<br>Intense drama.</p>
+<p class="price">Rent: ₹249</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- 3 Idiots -->
+<div class="movie-card" data-genre="comedy">
+<button class="wishlist-btn">❤</button>
+<img src="3idiots.jpg">
+<h3>3 Idiots</h3>
+<div class="rating" data-rating="4.9"></div>
+<p class="description">
+Three college friends.<br>
+Life lessons unfold.<br>
+Comedy meets emotion.<br>
+Bollywood classic.
+</p>
+<p class="price">Rent: ₹300</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Eega Nagariniki Emaindi -->
+<div class="movie-card" data-genre="comedy">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/M/MV5BZWEzZjY3NDUtZTM1OS00MTNkLWFiZDEtYjZhZDY5ZjQxYzU5XkEyXkFqcGdeQXVyMTEzOTI5NTk@._V1_.jpg">
+<h3>Eega Nagariniki Emaindi</h3>
+<div class="rating" data-rating="4.6"></div>
+<p class="description">Friends reunion.<br>Goa trip chaos.<br>Hilarious moments.<br>Cult comedy.</p>
+<p class="price">Rent: ₹199</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Jathi Ratnalu -->
+<div class="movie-card" data-genre="comedy">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/M/MV5BM2M5ZWI5NTgtNTEyMy00NmUwLWJhOWQtODBhNWE1NzI3Mjc4XkEyXkFqcGdeQXVyMTEzOTI5NTk@._V1_.jpg">
+<h3>Jathi Ratnalu</h3>
+<div class="rating" data-rating="4.3"></div>
+<p class="description">Village boys.<br>City madness.<br>Political comedy.<br>Pure fun.</p>
+<p class="price">Rent: ₹189</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Hangover -->
+<div class="movie-card" data-genre="comedy">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/I/81o2Q2XHfHL._AC_SL1500_.jpg">
+<h3>The Hangover</h3>
+<div class="rating" data-rating="4.4"></div>
+<p class="description">Bachelor party.<br>Lost memories.<br>Vegas chaos.<br>Wild comedy.</p>
+<p class="price">Rent: ₹299</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Mr Bean Holiday -->
+<div class="movie-card" data-genre="comedy">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/I/71+U9y5nCwL._AC_SL1024_.jpg">
+<h3>Mr. Bean’s Holiday</h3>
+<div class="rating" data-rating="4.2"></div>
+<p class="description">Silent humor.<br>Travel mishaps.<br>Family comedy.<br>Classic fun.</p>
+<p class="price">Rent: ₹220</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Titanic -->
+<div class="movie-card" data-genre="romance">
+<button class="wishlist-btn">❤</button>
+<img src="titanic.jpg">
+<h3>Titanic</h3>
+<div class="rating" data-rating="4.7"></div>
+<p class="description">
+Love on doomed ship.<br>
+Epic romance story.<br>
+Emotional tragedy.<br>
+Timeless classic.
+</p>
+<p class="price">Rent: ₹350</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Arjun Reddy -->
+<div class="movie-card" data-genre="romance">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/M/MV5BY2I2ZmU0N2EtYzQxNy00YzZhLWI2YzQtZTQwZmU5ZTA4ZDU2XkEyXkFqcGdeQXVyMTEzOTI5NTk@._V1_.jpg">
+<h3>Arjun Reddy</h3>
+<div class="rating" data-rating="4.4"></div>
+<p class="description">Intense love story.<br>Self-destruction.<br>Raw emotions.<br>Modern romance.</p>
+<p class="price">Rent: ₹249</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Sita Ramam -->
+<div class="movie-card" data-genre="romance">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/M/MV5BYjY4ZWE0NTAtZThmMy00NWRhLThmNzYtZjQ5YzFlMTRmZjYyXkEyXkFqcGdeQXVyMTEzOTI5NTk@._V1_.jpg">
+<h3>Sita Ramam</h3>
+<div class="rating" data-rating="4.7"></div>
+<p class="description">Timeless love.<br>Letters of destiny.<br>War backdrop.<br>Emotional romance.</p>
+<p class="price">Rent: ₹299</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- The Notebook -->
+<div class="movie-card" data-genre="romance">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/I/71E8VNPC1dL._AC_SL1024_.jpg">
+<h3>The Notebook</h3>
+<div class="rating" data-rating="4.6"></div>
+<p class="description">Everlasting love.<br>Heartfelt moments.<br>Classic romance.<br>Emotional journey.</p>
+<p class="price">Rent: ₹350</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- La La Land -->
+<div class="movie-card" data-genre="romance">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/I/81D+KJkOZxL._AC_SL1500_.jpg">
+<h3>La La Land</h3>
+<div class="rating" data-rating="4.5"></div>
+<p class="description">Music & dreams.<br>Bittersweet love.<br>Hollywood romance.<br>Beautiful visuals.</p>
+<p class="price">Rent: ₹320</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Avengers -->
+<div class="movie-card" data-genre="action">
+<button class="wishlist-btn">❤</button>
+<img src="avengers.jpg">
+<h3>Avengers: Endgame</h3>
+<div class="rating" data-rating="4.8"></div>
+<p class="description">
+Heroes unite again.<br>
+Battle against Thanos.<br>
+Emotional farewell.<br>
+Epic Marvel finale.
+</p>
+<p class="price">Rent: ₹400</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Interstellar -->
+<div class="movie-card" data-genre="scifi">
+<button class="wishlist-btn">❤</button>
+<img src="interstellar.jpg">
+<h3>Interstellar</h3>
+<div class="rating" data-rating="4.6"></div>
+<p class="description">
+Journey beyond galaxy.<br>
+Time bends.<br>
+Father-daughter story.<br>
+Mind blowing sci-fi.
+</p>
+<p class="price">Rent: ₹450</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Inception -->
+<div class="movie-card" data-genre="scifi">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SL1500_.jpg">
+<h3>Inception</h3>
+<div class="rating" data-rating="4.8"></div>
+<p class="description">
+Dream within a dream.<br>
+Mind bending thriller.<br>
+Heist in subconscious.<br>
+Sci-fi masterpiece.
+</p>
+<p class="price">Rent: ₹399</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- The Matrix -->
+<div class="movie-card" data-genre="scifi">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/I/51EG732BV3L.jpg">
+<h3>The Matrix</h3>
+<div class="rating" data-rating="4.7"></div>
+<p class="description">
+Reality is illusion.<br>
+Neo awakens.<br>
+Iconic action sci-fi.<br>
+Cult classic.
+</p>
+<p class="price">Rent: ₹349</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Gravity -->
+<div class="movie-card" data-genre="scifi">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/I/81kR3zY5k9L._AC_SL1500_.jpg">
+<h3>Gravity</h3>
+<div class="rating" data-rating="4.5"></div>
+<p class="description">
+Lost in space.<br>
+Survival thriller.<br>
+Stunning visuals.<br>
+Space drama.
+</p>
+<p class="price">Rent: ₹299</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+<!-- Dune -->
+<div class="movie-card" data-genre="scifi">
+<button class="wishlist-btn">❤</button>
+<img src="https://m.media-amazon.com/images/I/81xXAy6Q3zL._AC_SL1500_.jpg">
+<h3>Dune</h3>
+<div class="rating" data-rating="4.6"></div>
+<p class="description">
+Desert planet Arrakis.<br>
+Epic political saga.<br>
+Stunning world-building.<br>
+Futuristic sci-fi epic.
+</p>
+<p class="price">Rent: ₹379</p>
+<button class="rent-btn">🎟 Rent</button>
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 SrihithaCineVerse</p>
+</footer>
+
+<script src="script.js"></script></body>
+</html>
